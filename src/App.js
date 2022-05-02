@@ -1,6 +1,7 @@
 import './App.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { incAction, decAction } from './actions/actions';
+import InputElement from './components/InputElement';
 
 function App() {
   const myState = useSelector((state) => state.changeTheNumber);
@@ -31,6 +32,7 @@ function App() {
             <span> + </span>
           </button>
         </div>
+        <InputElement />
       </div>
     </>
   );
